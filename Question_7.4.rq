@@ -1,0 +1,6 @@
+prefix h:<http://www.inria.fr/2007/09/11/humans.rdfs#>
+select ?person ?adult where {
+    ?person rdf:type h:Person 
+    ?person h:age ?age
+    bind(if(?age/2 = round(?age/2),0,1) AS ?adult)
+}

@@ -1,0 +1,5 @@
+prefix h:<http://www.inria.fr/2007/09/11/humans.rdfs#>
+select * where {
+  ?Person rdf:type h:Person .
+  ?Person h:age ?age .
+}

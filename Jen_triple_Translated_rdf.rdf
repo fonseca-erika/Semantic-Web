@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:person="http://www.unice.fr/person#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://www.unice.fr/person#Steffen">
+    <rdf:type rdf:resource="http://www.unice.fr/person#Man"/>
+    <person:hasMother rdf:resource="http://www.unice.fr/person#Jen"/>
+    <person:name>Steffen</person:name>
+    <person:hasFather rdf:resource="http://www.unice.fr/person#Seb"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.unice.fr/person#Jen">
+    <person:name>Jen</person:name>
+    <rdf:type rdf:resource="http://www.unice.fr/person#Woman"/>
+    <person:hasChild rdf:resource="http://www.unice.fr/person#Steffen"/>
+    <person:hasSpouse rdf:resource="http://www.unice.fr/person#Seb"/>
+    <person:hasFather rdf:resource="http://www.unice.fr/person#Thomas"/>
+    <person:age>42</person:age>
+    <person:hasColleagues rdf:resource="http://www.unice.fr/person#Catherine"/>
+    <person:trousersize>38</person:trousersize>
+    <person:shoesize>36</person:shoesize>
+    <person:hasChild rdf:resource="http://www.unice.fr/person#Anny"/>
+    <person:hasColleagues rdf:resource="http://www.unice.fr/person#Fabien"/>
+    <rdf:type rdf:resource="http://www.unice.fr/person#Egineer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.unice.fr/person#Seb">
+    <person:hasChild rdf:resource="http://www.unice.fr/person#Ann"/>
+    <person:name>Seb</person:name>
+    <rdf:type rdf:resource="http://www.unice.fr/person#Man"/>
+    <person:hasChild rdf:resource="http://www.unice.fr/person#Steffen"/>
+    <person:hasSpouse rdf:resource="http://www.unice.fr/person#Jen"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.unice.fr/person#Thomas">
+    <person:hasChild rdf:resource="http://www.unice.fr/person#Jen"/>
+    <person:name>Thomas</person:name>
+    <rdf:type rdf:resource="http://www.unice.fr/person#Man"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.unice.fr/person#Anny">
+    <rdf:type rdf:resource="http://www.unice.fr/person#Woman"/>
+    <person:hasFather rdf:resource="http://www.unice.fr/person#Seb"/>
+    <person:name>Anny</person:name>
+    <person:hasMother rdf:resource="http://www.unice.fr/person#Jen"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,12 @@
+PREFIX h: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT common WHERE {
+{
+SELECT ?size (count(*) as ?qnt) WHERE {
+    ?person rdf:type h:Person; 
+                     h:shirtsize ?size .
+}
+GROUP BY ?size
+HAVING (?qnt > 1)
+}
+    ?common h:shirtsize ?size; rdf:type h:Person.
+}

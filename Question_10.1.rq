@@ -1,0 +1,9 @@
+prefix h:<http://www.inria.fr/2007/09/11/humans.rdfs-instances#>
+INSERT DATA {
+    h:Erika h:name "Erika"; 
+                   rdf:type h:Person;
+                   h:age "37"^^xsd:integer; 
+	 h:shoesize "36"^^xsd:integer ;
+	 h:hasFriend <http://www.inria.fr/2007/09/11/humans.rdfs-instances#John>;
+	 h:hasFriend <http://www.inria.fr/2007/09/11/humans.rdfs-instances#Eve> .	
+}

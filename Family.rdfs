@@ -1,0 +1,17 @@
+<rdf:RDF xml:base="http://www.unice.fr/Family.rdfs#"
+		 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+		 xmlns="http://www.w3.org/2000/01/rdf-schema#">
+<Class rdf:ID="Man">
+	<subClassOf rdf:resource="#Human"/>
+</Class>
+<Class rdf:ID="Woman">
+	<subClassOf rdf:resource="#Human"/>
+</Class>
+<rdf:Property rdf:ID="familyLink">
+	<rdf:subPropertyOf rdf:resource="#$hasSpouse"/>
+	<rdf:subPropertyOf rdf:resource="#$hasChild"/>
+</rdf:Property>
+<Class rdf:ID="FamilyMember">
+	<rdf:Property rdf:resource="#familyLink"/>
+</Class>
+</rdf:RDF>

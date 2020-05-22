@@ -1,0 +1,38 @@
+#“Jen is a 42-year old woman and she has a shoe size of 36 and trouser size of 38. She is, married to Seb who is a man with 
+#whom she had two children: Anny who is a woman and Steffen who is a man. Jen is also an engineer and Catherine and Fabien are 
+#her colleagues. Jen’s father is a man named Thomas”
+
+# definition of the prefixes:
+@prefix person: <http://www.unice.fr/person#> .
+
+# describing my document
+<http://www.unice.fr/person#Jen>
+	a person:Woman;
+	a person:Egineer;
+	person:name"Jen";
+	person:age"42";
+	person:shoesize"36";
+	person:trousersize"38";
+	person:hasFather <http://www.unice.fr/person#Thomas>;
+	person:hasSpouse<http://www.unice.fr/person#Seb>;
+	person:hasChild<http://www.unice.fr/person#Anny>, <http://www.unice.fr/person#Steffen>;
+	person:hasColleagues<http://www.unice.fr/person#Catherine>, <http://www.unice.fr/person#Fabien>.
+<http://www.unice.fr/person#Seb>
+	a person:Man;
+	person:name"Seb";	
+	person:hasSpouse<http://www.unice.fr/person#Jen>;
+	person:hasChild<http://www.unice.fr/person#Ann>, <http://www.unice.fr/person#Steffen> .
+<http://www.unice.fr/person#Thomas>
+	a person:Man;
+	person:name"Thomas";	
+	person:hasChild<http://www.unice.fr/person#Jen> .
+<http://www.unice.fr/person#Anny>
+	a person:Woman;
+	person:name"Anny";	
+	person:hasFather<http://www.unice.fr/person#Seb>;
+	person:hasMother<http://www.unice.fr/person#Jen> .	
+<http://www.unice.fr/person#Steffen>
+	a person:Man;
+	person:name"Steffen";	
+	person:hasFather<http://www.unice.fr/person#Seb>;
+	person:hasMother<http://www.unice.fr/person#Jen> .	

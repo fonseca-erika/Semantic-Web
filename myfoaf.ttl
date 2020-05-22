@@ -1,0 +1,30 @@
+@prefix admin: <http://webns.net/mvcb/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<> a foaf:PersonalProfileDocument ;
+    admin:errorReportsTo <mailto:leigh@ldodds.com> ;
+    admin:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+    foaf:maker <#me> ;
+    foaf:primaryTopic <#me> .
+
+<#me> a foaf:Person ;
+    foaf:depiction <https://photos.google.com/photo/AF1QipPQAfChIG2bXVSG8qj_QoS2oxJlDY4ObK0SZOhs> ;
+    foaf:family_name "Fonseca" ;
+    foaf:givenname "Erika" ;
+    foaf:homepage <linkedin.com/in/erikafonseca> ;
+    foaf:knows [ a foaf:Person ;
+            foaf:mbox_sha1sum "3746621f4977bb8bf1e07087ec0b671ea20a2cfd" ;
+            foaf:name "Andreia Fonseca" ],
+        [ a foaf:Person ;
+            rdfs:seeAlso <www.baruel.com.br> ;
+            foaf:mbox_sha1sum "58ed947eae4dab2f5a236266f74a8b9fe694523e" ;
+            foaf:name "Maria Jose" ] ;
+    foaf:mbox_sha1sum "bf9b8cdc428af6c831e664aea4ee46e3d7f78c44" ;
+    foaf:name "Erika Fonseca" ;
+    foaf:phone <tel:0752178288> ;
+    foaf:schoolHomepage <https://www.datasciencetech.institute/fr/> ;
+    foaf:title "Mrs" .

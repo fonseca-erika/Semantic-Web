@@ -1,0 +1,11 @@
+prefix h: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+CONSTRUCT {
+?s ?p ?v
+}
+WHERE
+{
+?person rdf:type h:Person .
+?s ?p ?v . 
+?person h:name "Erika" .
+  }
+

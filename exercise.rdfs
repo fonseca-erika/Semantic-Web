@@ -1,0 +1,17 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+@prefix : <http://inria.fr/devices#>
+ :PressArticle rdfs:subClassOf  :PublicDoc .
+ :AnnualReport rdfs:subClassOf  :PublicDoc , :Report .
+ :SecretReport rdfs:subClassOf  :Report , :InternalDoc .
+ :InternalMemo rdfs:subClassOf  :InternalDoc .
+ :Person rdfs:subClassOf :Agent .
+ :Group rdfs:subClassOf :Agent .
+
+<hasName> a rdf:Property . 
+	rdfs:subPropertyOf <hasParent> ;
+	rdfs:domain <Agent> . 
+
+ 
+ :Computer rdfs:subClassOf  :Device . 
+ :Smartphone rdfs:subClassOf :Computer . 
+ :Smartphone rdfs:subClassOf :Phone .  

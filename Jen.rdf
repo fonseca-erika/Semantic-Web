@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+		 xmlns:person="http://www.unice.fr/person#" 
+		 xmlns:rdfs="http://www.w3.org/2000/01/rdf schema#"
+		 xmlns:h="http://www.unice.fr/family.rdfs#">
+<rdf:Description rdf:about="http://www.unice.fr/person#Jen">
+	<person:name>Jen</person:name>
+	<person:age>42</person:age>
+	<person:shoesize>36</person:shoesize>
+	<person:trousersize>38</person:trousersize>
+	<rdf:type rdf:resource="Woman"/>
+	<rdf:type rdf:resource="Engineer"/>
+	<person:hasFather>
+		<rdf:Description rdf:about="http://www.unice.fr/person#Thomas">
+			<person:name>Thomas</person:name>
+			<rdf:type rdf:resource="Man"/>
+			<person:hasChild rdf:resource="http://www.unice.fr/person#Jen"/>
+		</rdf:Description>
+	</person:hasFather>
+	<person:hasSpouse>
+		<rdf:Description rdf:about="http://www.unice.fr/person#Seb">
+			<person:name>Seb</person:name>
+			<rdf:type rdf:resource="Man"/>
+			<person:hasSpouse rdf:resource="http://www.unice.fr/person#Jen"/>
+			<person:hasChild rdf:resource="http://www.unice.fr/person#Anny"/>
+			<person:hasChild rdf:resource="http://www.unice.fr/person#Steffen"/>
+		</rdf:Description>
+	</person:hasSpouse>
+	<person:hasChild>
+		<rdf:Description rdf:about="http://www.unice.fr/person#Anny">
+			<person:name>Anny</person:name>
+			<rdf:type rdf:resource="Woman"/>
+			<person:hasMother rdf:resource="http://www.unice.fr/person#Jen"/>
+			<person:hasFather rdf:resource="http://www.unice.fr/person#Seb"/>
+		</rdf:Description>
+	</person:hasChild>
+	<person:hasChild>
+		<rdf:Description rdf:about="http://www.unice.fr/person#Steffen">
+			<person:name>Steffen</person:name>
+			<rdf:type rdf:resource="Man"/>
+			<person:hasMother rdf:resource="http://www.unice.fr/person#Jen"/>
+			<person:hasFather rdf:resource="http://www.unice.fr/person#Seb"/>
+		</rdf:Description>
+	</person:hasChild>
+	<person:hasColleagues rdf:resource="http://www.unice.fr/person#Catherine"/>
+	<person:hasColleagues rdf:resource="http://www.unice.fr/person#Fabien"/>
+</rdf:Description>
+</rdf:RDF>

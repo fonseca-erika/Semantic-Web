@@ -1,0 +1,7 @@
+prefix h:<http://www.inria.fr/2007/09/11/humans.rdfs#>
+insert {
+   ?y h:hasFriend ?x
+}
+where {
+  ?x h:hasFriend ?y
+}

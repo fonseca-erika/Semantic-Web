@@ -1,0 +1,8 @@
+prefix h: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+select *
+WHERE
+{
+?person rdf:type h:Person .
+?person ?p ?v . 
+?person h:name "Erika" .
+  }
